@@ -33,7 +33,7 @@
 
         <!-- Dashboard -->
         <li class="menu-item active">
-            <a href="#" class="menu-link">
+            <a href="{{ url('dashboard') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-layout-grid"></i>
                 <div data-i18n="Beranda">Beranda</div>
             </a>
@@ -45,7 +45,7 @@
 
         <!-- Absensi -->
         <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ url('absensi') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-checklist"></i>
                 <div data-i18n="Absensi Siswa">Absensi Siswa</div>
             </a>
