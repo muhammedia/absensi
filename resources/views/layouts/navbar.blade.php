@@ -37,10 +37,10 @@
                 <ul class="dropdown-menu dropdown-menu-end py-0">
                     <li class="dropdown-menu-header border-bottom">
                         <div class="dropdown-header d-flex align-items-center py-3">
-                            <h5 class="text-body mb-0 me-auto">Notification</h5>
+                            <h5 class="text-body mb-0 me-auto">Notifikasi</h5>
                             <a href="javascript:void(0)" class="dropdown-notifications-all text-body"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="Mark all as read"><i
-                                    class="ti ti-mail-opened fs-4"></i></a>
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Tandai telah dibaca"><i
+                                    class="ti ti-checks fs-4"></i></a>
                         </div>
                     </li>
                     <li class="dropdown-notifications-list scrollable-container">
@@ -49,8 +49,7 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar">
-                                            <img src="../../assets/img/avatars/1.png" alt
-                                                class="h-auto rounded-circle" />
+                                            <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
@@ -91,8 +90,7 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar">
-                                            <img src="../../assets/img/avatars/2.png" alt
-                                                class="h-auto rounded-circle" />
+                                            <img src="assets/img/avatars/2.png" alt class="h-auto rounded-circle" />
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
@@ -134,8 +132,7 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar">
-                                            <img src="../../assets/img/avatars/9.png" alt
-                                                class="h-auto rounded-circle" />
+                                            <img src="assets/img/avatars/9.png" alt class="h-auto rounded-circle" />
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
@@ -178,8 +175,7 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar">
-                                            <img src="../../assets/img/avatars/5.png" alt
-                                                class="h-auto rounded-circle" />
+                                            <img src="assets/img/avatars/5.png" alt class="h-auto rounded-circle" />
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
@@ -199,8 +195,7 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar">
-                                            <img src="../../assets/img/avatars/6.png" alt
-                                                class="h-auto rounded-circle" />
+                                            <img src="assets/img/avatars/6.png" alt class="h-auto rounded-circle" />
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
@@ -243,7 +238,7 @@
                     <li class="dropdown-menu-footer border-top">
                         <a href="javascript:void(0);"
                             class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center">
-                            View all notifications
+                            Tampilkan Semua Notifikasi
                         </a>
                     </li>
                 </ul>
@@ -254,7 +249,7 @@
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                        <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                        <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -263,7 +258,7 @@
                             <div class="d-flex">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar avatar-online">
-                                        <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                                        <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">

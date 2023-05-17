@@ -54,7 +54,19 @@
         <li class="menu-item">
             <a href="#" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-book-2"></i>
-                <div data-i18n="Rapot">Rapot</div>
+                <div data-i18n="Rapot Siswa">Rapot Siswa</div>
+            </a>
+        </li>
+
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Menu Wali Murid</span>
+        </li>
+
+        <!-- Absensi -->
+        <li class="menu-item">
+            <a href="{{ url('absen') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-clipboard-text"></i>
+                <div data-i18n="Daftar Absensi">Daftar Absensi</div>
             </a>
         </li>
 
