@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('tanggal');
             $table->string('nama');
             $table->string('notif');
-            $table->bigInteger('hp_ortu');
+            $table->integer('hp_ortu');
         });
     }
 
