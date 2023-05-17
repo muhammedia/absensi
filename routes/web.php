@@ -12,6 +12,8 @@ Route::controller(LoginController::class)->group(function () {
     Route::get('register', 'halamanDaftar');
     Route::post('daftar', 'fungsiDaftar');
 });
+route::post('logout', [LoginController::class, 'fungsiLogout'])->middleware('auth');
+
 
 Route::get('dashboard', [DashboardController::class, 'index']);
 Route::get('home', [WaliController::class, 'index']);

@@ -56,4 +56,14 @@ class LoginController extends Controller
 
         return redirect('masuk');
     }
+
+    public function fungsiLogout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/masuk')->with('message', 'Anda telah logout!');
+    }
 }
