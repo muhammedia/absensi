@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('absen');
             $table->integer('induk');
             $table->string('nm_siswa');
-            $table->string('keterangan');
+            $table->enum('keterangan', ['sakit', 'ijin', 'alpha', 'terlambat']);
         });
     }
 
