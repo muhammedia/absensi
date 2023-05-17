@@ -28,8 +28,12 @@
                                 <option value="TBSM">TBSM</option>
                             </select>
                         </div>
+                        <div class="col-md-3">
+                            <label for="Guru" class="form-label">Nama Guru</label>
+                            <input type="text" class="form-control" id="Guru" disabled value="Muhammad Mauribi" />
+                        </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                             <label for="mapel" class="form-label">Mata Pelajaran</label>
                             <select id="mapel" class="select2 form-select form-select-lg">
                                 <option selected disabled>Pilih Mata Pelajaran</option>
@@ -46,7 +50,7 @@
 
                         <div class="col-md-2 mt-4">
                             <button class="btn btn-primary">
-                                <i class="fas fa-search me-1"></i> Cari Siswa
+                                <i class="fas fa-search me-1"></i> Simpan
                             </button>
                         </div>
                     </div>
@@ -98,6 +102,7 @@
                             </thead>
                             <tbody class="table-border-bottom-0">
                                 <tr>
+                                    <input type="hidden" name="id" value="id_siswa">
                                     <td>
                                         <strong>1</strong>
                                     </td>
