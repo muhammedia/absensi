@@ -9,5 +9,6 @@ class pembayaranSiswa extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
+    protected $table = ['pembayaran_siswa'];
     public $timestamps = false;
 }

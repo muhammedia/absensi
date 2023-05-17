@@ -9,5 +9,6 @@ class absensi extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
+    protected $table = ['absensi_siswa'];
     public $timestamps = false;
 }
