@@ -33,7 +33,7 @@ class LoginController extends Controller
 
             if ($auth->role == 'Guru') {
                 return redirect('dashboard');
-            } else if ($auth->role == 'Wali') {
+            } else if ($auth->role == 'Wali Murid') {
                 return redirect('home');
             }
         }
@@ -50,7 +50,7 @@ class LoginController extends Controller
         User::create([
             'username' => $request->username,
             'password' => bcrypt($request->password),
-            'role' => 'Wali',
+            'role' => 'Wali Murid',
             'remember_token' => Str::random(60),
         ]);
 

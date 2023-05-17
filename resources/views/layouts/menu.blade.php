@@ -32,53 +32,68 @@
         </li>
 
         <!-- Dashboard -->
-        <li class="menu-item active">
-            <a href="{{ url('dashboard') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-layout-grid"></i>
-                <div data-i18n="Beranda">Beranda</div>
-            </a>
-        </li>
+        @if (Auth::user()->role == 'Guru')
+            <li class="menu-item {{ Request::is('dashboard') ? ' active' : '' }}">
+                <a href="{{ url('dashboard') }}" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-layout-grid"></i>
+                    <div data-i18n="Beranda">Beranda</div>
+                </a>
+            </li>
+        @elseif(Auth::user()->role == 'Wali Murid')
+            <li class="menu-item {{ Request::is('home') ? ' active' : '' }}">
+                <a href="{{ url('home') }}" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                    <div data-i18n="Home">Home</div>
+                </a>
+            </li>
+        @endif
 
-        <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Menu Guru</span>
-        </li>
+        @if (Auth::user()->role == 'Guru')
+            <li class="menu-header small text-uppercase">
+                <span class="menu-header-text">Menu Guru</span>
+            </li>
 
-        <!-- Absensi -->
-        <li class="menu-item">
-            <a href="{{ url('absensi') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-checklist"></i>
-                <div data-i18n="Absensi Siswa">Absensi Siswa</div>
-            </a>
-        </li>
+            <!-- Absensi -->
+            <li class="menu-item {{ Request::is('absensi') ? ' active' : '' }}">
+                <a href="{{ url('absensi') }}" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-checklist"></i>
+                    <div data-i18n="Absensi Siswa">Absensi Siswa</div>
+                </a>
+            </li>
 
-        <li class="menu-item">
-            <a href="#" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-book-2"></i>
-                <div data-i18n="Rapot Siswa">Rapot Siswa</div>
-            </a>
-        </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-book-2"></i>
+                    <div data-i18n="Rapot Siswa">Rapot Siswa</div>
+                </a>
+            </li>
+        @endif
 
-        <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Menu Wali Murid</span>
-        </li>
+        @if (Auth::user()->role == 'Wali Murid')
+            <li class="menu-header small text-uppercase">
+                <span class="menu-header-text">Menu Wali Murid</span>
+            </li>
 
-        <!-- Absensi -->
-        <li class="menu-item">
-            <a href="{{ url('absen') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-clipboard-text"></i>
-                <div data-i18n="Daftar Absensi">Daftar Absensi</div>
-            </a>
-        </li>
+            <!-- Absensi -->
+            <li class="menu-item {{ Request::is('absen') ? ' active' : '' }}">
+                <a href="{{ url('absen') }}" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-clipboard-text"></i>
+                    <div data-i18n="Daftar Absensi">Daftar Absensi</div>
+                </a>
+            </li>
+        @endif
 
-        <!-- Apps & Pages -->
-        <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Manajemen</span>
-        </li>
-        <li class="menu-item">
-            <a href="app-email.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-wallet"></i>
-                <div data-i18n="Keuangan">Keuangan</div>
-            </a>
-        </li>
+        @if (Auth::user()->role == 'Guru')
+            <!-- Apps & Pages -->
+            <li class="menu-header small text-uppercase">
+                <span class="menu-header-text">Manajemen</span>
+            </li>
+            <li class="menu-item">
+                <a href="app-email.html" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-wallet"></i>
+                    <div data-i18n="Keuangan">Keuangan</div>
+                </a>
+            </li>
+        @endif
     </ul>
 </aside>

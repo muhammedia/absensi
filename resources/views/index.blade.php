@@ -9,8 +9,8 @@
                     <div class="d-flex align-items-end row">
                         <div class="col-7">
                             <div class="card-body">
-                                <h5 class="card-title">Selamat Datang, Nama Yang Sedang Login! 🎉</h5>
-                                <p>Anda berhasil login sebagai Guru</p>
+                                <h5 class="card-title">Selamat Datang, {{ auth()->user()->username }}! 🎉</h5>
+                                <p>Anda berhasil login sebagai <b>{{ auth()->user()->role }}</b></p>
                             </div>
                         </div>
                         <div class="col-5 text-center text-sm-left">
