@@ -49,8 +49,8 @@
                         </div>
 
                         <div class="col-md-2 mt-4">
-                            <button class="btn btn-primary">
-                                <i class="fas fa-search me-1"></i> Simpan
+                            <button class="btn btn-success">
+                                <i class="fas fa-save me-1"></i> Simpan
                             </button>
                         </div>
                     </div>
@@ -79,11 +79,6 @@
                     <a href="{{ asset('assets/files/resume.pdf') }}" class="btn btn-sm btn-outline-info mb-3" download>
                         <i class="fas fa-download me-1"></i> Unduh Excel
                     </a>
-
-
-                    <button class="btn btn-sm btn-outline-success mb-3" type="submit">
-                        <i class="fas fa-save me-1"></i> Simpan
-                    </button>
                     <br>
                     <span id="fileName" class="text-small text-center text-danger"></span>
 
@@ -97,7 +92,6 @@
                                     <th>Kelas</th>
                                     <th>Jurusan</th>
                                     <th>Keterangan</th>
-                                    <th>Opsi</th>
                                 </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
@@ -128,11 +122,6 @@
                                             <option>Alpha</option>
                                             <option>Terlambat</option>
                                         </select>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-sm btn-outline-success" type="submit">
-                                            <i class="fas fa-save"></i>
-                                        </button>
                                     </td>
                                 </tr>
                             </tbody>

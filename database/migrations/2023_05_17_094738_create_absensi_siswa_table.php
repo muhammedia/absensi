@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('absen');
             $table->integer('induk');
             $table->string('nm_siswa');
-            $table->enum('keterangan', ['sakit', 'ijin', 'alpha', 'terlambat'])->default('masuk');
+            $table->enum('keterangan', ['Sakit', 'Ijin', 'Alpha', 'Terlambat', 'Masuk'])->default('Masuk');
         });
     }
 
