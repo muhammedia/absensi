@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class absensiSiswa extends Model
 {
     use HasFactory;
+    protected $guarded = ['id'];
+    protected $table = ['absensi_siswa'];
+    public $timestamps = false;
 }
