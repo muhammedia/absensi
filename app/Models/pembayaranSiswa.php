@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class pembayaranSiswa extends Model
 {
     use HasFactory;
-    protected $guarded = ['id'];
+    protected $guarded = [''];
     protected $table = ['pembayaran_siswa'];
     public $timestamps = false;
 }
